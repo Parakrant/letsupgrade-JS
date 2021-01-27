@@ -1,0 +1,74 @@
+<!-- Question 1
+What will the code below output to the console and why ?
+console.log(1 + "2" + "2");
+console.log(1 + +"2" + "2");
+console.log(1 + -"1" + "2");
+console.log(+"1" + "1" + "2");
+console.log( "A" - "B" + "2");
+console.log( "A" - "B" + 2); */
+-->
+<!DOCTYPE html>
+<html>
+  <body>
+
+    <!-- Question1
+    <script>
+      console.log(1+"2"+"2");
+      //122 Here the operand does concatenation 
+      console.log(1 + +"2" + "2");
+      //32 Here the + + operand before "2" convert it from sting to number
+      console.log(1 + -"1" + "2");
+      //02 Here the + - operand before the "1" conver it to number.
+      console.log(+"1" + "1" + "2");
+      //122 it simply concatenates all the string variables
+      console.log("A" - "B" + "2");
+      //NAN2 Since - operand cannot be used for concatenation
+      console.log("A" - "B" + 2);
+      //NAN Since adding NAN with 2
+    </script>
+    -->
+
+    <!--Question 2 -->
+    <script>
+        var marks = 28;
+        if( marks > 90 )
+        {
+            console.log("AA");
+        }
+        else if(marks>80 && marks <=90)
+        {
+            console.log("AB")
+        }
+        else if(marks>70 && marks <=80)
+        {
+            console.log("BB")
+        }
+        else if(marks>60 && marks <=70)
+        {
+            console.log("BC")
+            
+        }
+        else if(marks>50 && marks <=60)
+        {
+            console.log("CC")
+            
+        }        
+        else if(marks>40 && marks <=50)
+        {
+            console.log("CD")
+            
+        }        
+        else if(marks>30 && marks <=40)
+        {
+            console.log("DD")
+            
+        }
+        else if(marks<=30)
+        {
+            console.log("FF")
+            
+        }
+    </script>
+
+  </body>
+</html>
